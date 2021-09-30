@@ -7,12 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <ul>
-             @foreach($data as $item)
-                <li><a href="http://127.0.0.1:8000/{{$item}}">{{$item}}</a></li>
-            @endforeach
-        </ul>
-    </header>
+    faqs
 </body>
 </html>

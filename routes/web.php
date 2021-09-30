@@ -13,10 +13,34 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/home', function () {
 
     $data=['home','news','info','faqs'];
     
 
     return view('home', ['data'=> $data]);
+});
+
+Route::get('/news', function () {
+
+    
+    
+
+    return view('news');
+});
+
+Route::get('/info', function () {
+
+    
+    
+
+    return view('info');
+});
+
+Route::get('/faqs', function () {
+
+    
+    
+
+    return view('faqs');
 });
