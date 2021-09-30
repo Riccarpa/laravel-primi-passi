@@ -13,13 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/home', function () {
+Route::get('/', function () {
 
     $data=['home','news','info','faqs'];
     
 
     return view('home', ['data'=> $data]);
-});
+})->name('home');
 
 Route::get('/news', function () {
 
@@ -27,7 +27,7 @@ Route::get('/news', function () {
     
 
     return view('news');
-});
+})->name('news');
 
 Route::get('/info', function () {
 
@@ -35,7 +35,7 @@ Route::get('/info', function () {
     
 
     return view('info');
-});
+})->name('info');
 
 Route::get('/faqs', function () {
 
@@ -43,4 +43,4 @@ Route::get('/faqs', function () {
     
 
     return view('faqs');
-});
+})->name('faqs');

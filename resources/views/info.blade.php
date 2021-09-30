@@ -8,5 +8,6 @@
 </head>
 <body>
     info
+    <button><a href="{{route('home')}}">home</a></button>
 </body>
 </html>

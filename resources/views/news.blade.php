@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    ciao
+    info
+    <button><a href="{{route('home')}}">home</a></button>
 </body>
 </html>
